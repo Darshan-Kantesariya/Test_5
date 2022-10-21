@@ -1,0 +1,24 @@
+.logo {
+    @include logo-c;
+    // height: 2.4rem;
+    // width: 2.4rem;
+    // margin: 1rem;
+    // color: var(--color-primary-font);
+    // fill: var(--color-primary-font);
+}
+.logo:first-child{
+    color: white;
+}
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.home-logo{
+    background-color: #1f1c2f;
+    padding: 0.2rem;
+    border-radius: 50%;
+    margin: 1.6rem 0;
+   
+}

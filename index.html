@@ -1,214 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/logo.png" alt="" class="logo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+
+    <title>Darshan</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="header">
+            <div class="ham-logo logo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="var(--color-primary-font)" class="">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class="header-front">
+
+
+                <span class="portfolio-text">Portfolio</span>
+
                 <form action="#" class="search">
-                    <input type="text" name="" id="" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
+
+                    <!-- <button class="search__button"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                        stroke="currentColor" class="search__icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    <input type="text" name="" id="" class="search__input" placeholder="Search ">
+                    <!-- </button> -->
                 </form>
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span class="user-nav__notification">7</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Jonas</span>
-                    </div>
-                </nav>
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-home"></use>
-                                </svg>
-                                <span>Hotel</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
-                                </svg>
-                                <span>Flight</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-key"></use>
-                                </svg>
-                                <span>Car rental</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-map"></use>
-                                </svg>
-                                <span>Tours</span>
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="header-back">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="header-back-plus">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
 
-                    <div class="legal">
-                        &copy; 2017 by trillo. All rights reserved.
-                    </div>
-                </nav>
-                <main class="hotel-view">
-                    <div class="gallery">
-                        <figure class="gallery__item">
-                            <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
-                        </figure>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="header-back-bell">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+
+                <hr class="header-back-hr">
+
+                <div class="header-back-profile">
+                    <img src="/img/profile-image.jpg" alt="profile-image" class="header-back-image">
+                </div>
+
+                <span class="header-back-name">Hira R</span>
+            </div>
+
+        </div>
+        <!-- </div> -->
+        <div class="navigation">
+            <div class="nav-logo">
+                <div class="home-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="logo">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+
+                </div>
+                <div class="profile-logo logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div class="message-logo logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>
+                </div>
+                <div class="cal-logo logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    </svg>
+                </div>
+                <div class="time-logo logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div class="setting-logo logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="maincomp">
+            <div class="maincomp-title">
+                <div class="maincomp-title-1">
+                    Projects
+                </div>
+                <div class="maincomp-title-2">
+                    July, 2020
+                </div>
+            </div>
+            <div class="maincomp-detail">
+                <div class="maincomp-detail-part1">
+                    <div class="maincomp-detail-part1-box">
+                        <div class="maincomp-detail-part1-box-title">45</div>
+                        <div class="maincomp-detail-part1-box-status">In Progress</div>
                     </div>
 
-                    <div class="overview">
-                        <h1 class="overview__heading">
-                            Hotel Las Palmas
-                        </h1>
+                    <div class="maincomp-detail-part1-circle"></div>
 
-                        <div class="overview__stars">
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                    <div class="maincomp-detail-part1-box">
+                        <div class="maincomp-detail-part1-box-title">12</div>
+                        <div class="maincomp-detail-part1-box-status">In Progress</div>
+                    </div>
+
+                    <div class="maincomp-detail-part1-circle"></div>
+
+                    <div class="maincomp-detail-part1-box">
+                        <div class="maincomp-detail-part1-box-title">10</div>
+                        <div class="maincomp-detail-part1-box-status">Upcoming</div>
+                    </div>
+
+                    <div class="maincomp-detail-part1-circle"></div>
+
+                    <div class="maincomp-detail-part1-box">
+                        <div class="maincomp-detail-part1-box-title">67</div>
+                        <div class="maincomp-detail-part1-box-status">Total Project</div>
+                    </div>
+                </div>
+                <div class="maincomp-detail-part2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="maincomp-detail-part2-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="maincomp-detail-part2-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+
+
+                </div>
+            </div>
+            <div class="maincomp-card">
+
+                <div class="maincomp-card-box">
+                    <div class="maincomp-card-box-title">
+                        <div class="maincomp-card-box-title-1">July 2, 2020</div>
+                        <div class="maincomp-card-box-title-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="var(--color-primary-font)" class="maincomp-card-box-title-2-logo">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                             </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
+
                         </div>
-
-                        <div class="overview__location">
-                            <svg class="overview__icon-location">
-                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                            </svg>
-                            <button class="btn-inline">Albufeira, Portugal</button>
-                        </div>
-
-                        <div class="overview__rating">
-                            <div class="overview__rating-average">8.6</div>
-                            <div class="overview__rating-count">429 votes</div>
-                        </div>
                     </div>
-
-                    <div class="detail">
-                        <div class="description">
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
-                            </p>
-                            <p class="paragraph">
-                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
-                            </p>
-                            <ul class="list">
-                                <li class="list__item">Close to the beach</li>
-                                <li class="list__item">Breakfast included</li>
-                                <li class="list__item">Free airport shuttle</li>
-                                <li class="list__item">Free wifi in all rooms</li>
-                                <li class="list__item">Air conditioning and heating</li>
-                                <li class="list__item">Pets allowed</li>
-                                <li class="list__item">We speak all languages</li>
-                                <li class="list__item">Perfect for families</li>
-                            </ul>
-                            <div class="recommend">
-                                <p class="recommend__count">
-                                    Lucy and 3 other friends recommend this hotel.
-                                </p>
-                                <div class="recommend__friends">
-                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
-                                </div>
+                    <div class="maincomp-card-box-name">
+                        <div class="maincomp-card-box-name-1">Web Designing</div>
+                        <div class="maincomp-card-box-name-2">Prototyping</div>
+                    </div>
+                    <div class="maincomp-card-box-progress">
+                        <div class="maincomp-card-box-progress-1">Progress</div>
+                        <div class="maincomp-card-box-progress-2">
+                            <!-- <progress  max="100" value="90" > </progress> -->
+                            <div class="maincomp-card-box-progress-2-a1">
+                                <div class="maincomp-card-box-progress-2-a2"></div>
                             </div>
                         </div>
+                        <div class="maincomp-card-box-progress-3">90%</div>
+                    </div>
 
-                        <div class="user-reviews">
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-1.jpg" alt="User 1" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Nick Smith</p>
-                                        <p class="review__user-date">Feb 23rd, 2017</p>
-                                    </div>
-                                    <div class="review__rating">7.8</div>
-                                </figcaption>
-                            </figure>
+                    <div class="maincomp-card-box-people">
+                        <div class="maincomp-card-box-people-left">
+                            <div class="maincomp-card-box-people-left-1">
+                                <img src="img/profile-image.jpg" alt="">
+                            </div>
+                            <div class="maincomp-card-box-people-left-2">
+                                <img src="img/profile-image.jpg" alt="">
+                            </div>
+                            <div class="maincomp-card-box-people-left-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                </svg>
 
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-2.jpg" alt="User 1" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Mary Thomas</p>
-                                        <p class="review__user-date">Sept 13th, 2017</p>
-                                    </div>
-                                    <div class="review__rating">9.3</div>
-                                </figcaption>
-                            </figure>
+                            </div>
 
-                            <button class="btn-inline">Show all <span>&rarr;</span></button>
                         </div>
-                        </div>
-                        
+                        <div class="maincomp-card-box-right">
 
-                        <div class="cta">
-                            <h2 class="cta__book-now">
-                                Good news! We have 4 free rooms for your selected dates!
-                            </h2>
-                            <button class="btn">
-                                <span class="btn__visible">Book now</span>
-                                <span class="btn__invisible">Only 4 rooms left</span>
-                            </button>
                         </div>
-                        
+                    </div>
+                </div>
 
-                </main>
+
             </div>
+
         </div>
-    </body>
+        <div class="side">
+
+        </div>
+    </div>
+</body>
+
 </html>

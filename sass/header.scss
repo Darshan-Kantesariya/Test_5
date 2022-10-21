@@ -1,0 +1,104 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header:first-child{
+  padding-left: 20px;
+}
+.header-front {
+  width: 50%;
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  justify-self: flex-start;
+  // align-items:center ;
+  margin-left: -18rem ;
+}
+.ham-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // color: black;
+  // @include logo-c;
+  margin-left:10px ;
+
+}
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search__input {
+  // font-family: inherit;
+  font-size: 1rem;
+  color: black;
+  // background-color: rgb(215, 212, 212);
+  border: none;
+  padding: 0.7rem 3.1rem;
+  border-radius: 100px;
+  width: 20rem;
+  // transition: all 0.2s;
+  margin-left: -2.6rem;
+}
+.search__icon {
+  font-size: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  // background-color: rgb(215, 212, 212);
+  color: grey;
+  // fill: black;
+  z-index: 1;
+}
+.portfolio-text {
+  font-size: 1.6rem;
+  // color: gray;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-back {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   justify-self: flex-end;
+
+  &-plus {
+    @include logo-c;
+    background-color: #1f1c2f;
+    padding: 0.2rem;
+    border-radius: 50%;
+    margin: 1.6rem 0;
+  }
+
+  &-bell {
+    @include logo-c;
+
+  }
+
+  &-hr {
+    height: 20px;
+    // margin: 0 1rem;
+  }
+  &-profile {
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 1rem;
+    
+  }
+  &-image{
+    height: 3rem;
+    width: 3rem;
+    size: 3rem 3rem;
+  }
+  &-name {
+    font-size: 1rem;
+    
+  }
+}
