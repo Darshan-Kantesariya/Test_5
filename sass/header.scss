@@ -1,104 +1,226 @@
+$red: red;
+$black: black;
+$home-logo: #1f1c2f;
+$white: white;
+$color_1: #484848;
+
+img {
+  object-fit: cover;
+}
 .header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
+
+  @media only screen and (max-width: 900px) {
+    // height: 120px;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &:first-child {
+    padding-left: 20px;
+  }
+
+  &-front {
+    width: 30rem;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    justify-self: flex-start;
+    // align-items:center ;
+    margin-left: 4.5rem;
+
+    @media only screen and (max-width: 900px) {
+      width: 20rem;
+    }
+
+    &-div {
+      padding-top: 1rem;
+      @media only screen and (max-width: 900px) {
+        // background-color: blue;
+        padding-top: 0;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &-1 {
+        @media only screen and (max-width: 900px) {
+          background-color: $home-logo;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &-back {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 2rem;
+    //   justify-self: flex-end;
+
+    @media only screen and (max-width: 900px) {
+      width: 17rem;
+      margin-left: auto;
+      // margin: 0 auto;
+    }
+
+    &-plus {
+      @include logo-c;
+
+      background-color: $home-logo;
+      padding: 0.2rem;
+      border-radius: 50%;
+      margin: 1.6rem 0;
+      color: $white;
+    }
+
+    &-div {
+      position: relative;
+      &-bell {
+        @include logo-c;
+        color: $black;
+      }
+      &-dot {
+        height: 8px;
+        width: 8px;
+        background-color: $red;
+        border-radius: 50%;
+        position: absolute;
+        left: 31px;
+        top: 16px;
+      }
+    }
+
+    &-hr {
+      height: 40px;
+      width: 2px;
+      border-width: 0;
+      background-color: #e0e0e0;
+      // margin: 0 1rem;
+    }
+    &-profile {
+      height: 2.5rem;
+      width: 2.5rem;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 1rem;
+    }
+    &-image {
+      height: 3rem;
+      width: 3rem;
+      size: 3rem 3rem;
+    }
+    &-name {
+      color: $color_1;
+      font-size: 1.2rem;
+      font-weight: 700;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-nav {
+    // background-color:red;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-bar2 {
+      width: 30px;
+      height: 2px;
+      background-color: $color_1;
+    }
+    &-bar1,
+    &-bar3 {
+      width: 15px;
+      height: 2px;
+      background-color: $color_1;
+      margin: 4px 0;
+      transition: all 0.3s;
+    }
+    &:hover {
+      &-bar1,
+      &-bar3 {
+        width: 30px;
+      }
+    }
+  }
 }
-.header:first-child{
-  padding-left: 20px;
-}
-.header-front {
-  width: 50%;
-  display: flex;
-  // flex-direction: column;
-  justify-content: space-around;
-  justify-self: flex-start;
-  // align-items:center ;
-  margin-left: -18rem ;
-}
+
 .ham-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   // color: black;
   // @include logo-c;
-  margin-left:10px ;
-
+  margin-left: 10px;
 }
 .search {
   flex: 0 0 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.search__input {
-  // font-family: inherit;
-  font-size: 1rem;
-  color: black;
-  // background-color: rgb(215, 212, 212);
-  border: none;
-  padding: 0.7rem 3.1rem;
-  border-radius: 100px;
-  width: 20rem;
-  // transition: all 0.2s;
-  margin-left: -2.6rem;
-}
-.search__icon {
-  font-size: 1rem;
-  height: 1.4rem;
-  width: 1.4rem;
-  // background-color: rgb(215, 212, 212);
-  color: grey;
-  // fill: black;
-  z-index: 1;
+  @media only screen and (max-width: 900px) {
+    // display: none;
+    // height: 3rem;
+    // width: 3rem;
+  }
+
+  &__input {
+    // font-family: inherit;
+    font-size: 0.8rem;
+    color: $black;
+    // background-color: rgb(215, 212, 212);
+    border: none;
+    padding: 0.7rem 3.1rem;
+    border-radius: 100px;
+    width: 20rem;
+    // transition: all 0.2s;
+    margin-left: -2.6rem;
+
+    @media only screen and (max-width: 900px) {
+      width: 15rem;
+      display: none;
+    }
+  }
+  &__icon {
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
+    // background-color: rgb(215, 212, 212);
+    color: grey;
+    // fill: black;
+    z-index: 1;
+    @media only screen and (max-width: 900px) {
+      width: 15rem;
+      color: white;
+      // display: none;
+    }
+  }
 }
 .portfolio-text {
   font-size: 1.6rem;
   // color: gray;
   font-weight: 700;
   display: flex;
+  color: #2f2f2f;
   align-items: center;
   justify-content: center;
-}
-.header-back {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-//   justify-self: flex-end;
-
-  &-plus {
-    @include logo-c;
-    background-color: #1f1c2f;
-    padding: 0.2rem;
-    border-radius: 50%;
-    margin: 1.6rem 0;
-  }
-
-  &-bell {
-    @include logo-c;
-
-  }
-
-  &-hr {
-    height: 20px;
-    // margin: 0 1rem;
-  }
-  &-profile {
-    height: 2rem;
-    width: 2rem;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 1rem;
-    
-  }
-  &-image{
-    height: 3rem;
-    width: 3rem;
-    size: 3rem 3rem;
-  }
-  &-name {
-    font-size: 1rem;
-    
-  }
 }

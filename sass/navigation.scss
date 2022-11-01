@@ -1,13 +1,19 @@
+$black:black;
+$home-logo:#1f1c2f;
+$white:white;
+
 .logo {
     @include logo-c;
-    // height: 2.4rem;
-    // width: 2.4rem;
-    // margin: 1rem;
-    // color: var(--color-primary-font);
-    // fill: var(--color-primary-font);
+    cursor: pointer;
+
+&:hover{
+    color: $black;
+    transform: scale(1.1);
 }
-.logo:first-child{
-    color: white;
+&:first-child{
+    color: $white;
+    transform: scale(1);
+}
 }
 .nav-logo{
     display: flex;
@@ -16,7 +22,7 @@
 
 }
 .home-logo{
-    background-color: #1f1c2f;
+    background-color: $home-logo;
     padding: 0.2rem;
     border-radius: 50%;
     margin: 1.6rem 0;
