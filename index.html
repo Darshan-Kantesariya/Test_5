@@ -54,6 +54,41 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mid" id="mid">
+                <div class=" mid1 header-mid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="header-mid-icon-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                    </svg>
+
+                    <section class="header-mid-icon-1">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="header-back-plus">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                    </section>
+
+                    <div class="header-back-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="header-back-div-bell">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                        <div class="header-back-div-dot"></div>
+                    </div>
+
+                    <hr class="header-back-hr">
+
+                    <div class="header-back-profile">
+                        <img src="../img/person1.jpg" alt="profile-image" class="header-back-image">
+                    </div>
+
+                    <span class="header-back-name">Hira R</span>
+
+                </div>
+            </div>
             <div class="header-back">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="header-back-plus">
@@ -703,6 +738,8 @@
     </div>
 
     <script>
+
+        // search in header hide-show
         function show() {
             const box = document.querySelector(".maincomp-se");
             if (box.style.display != "none") {
@@ -713,38 +750,60 @@
             }
         }
 
-        // function nav_click() {
-        //     const box = document.querySelector(".maincontainer");
-        //     if (box.style.gridTemplateColumns = "100px 1.4fr 1fr") {
-        //         document.querySelector(".navigation").style.display = "none";
-        //         document.querySelector(".maincontainer").style.gridTemplateColumns = "1fr 1fr";
-        //     }
-        //     else {
-        //         document.querySelector(".navigation").style.display = "inline-block";
-        //         document.querySelector(".maincontainer").style.gridTemplateColumns = "100px 1.4fr 1fr";
 
-        //     }
-
-        // }
+        // navigation hide-show
 
         var button = document.getElementById("nav_click"),
             count = 0;
         button.onclick = function () {
             count += 1;
-            if (count % 2 == 0) {
+            if (count % 2 != 0) {
                 document.querySelector(".navigation").classList.add("d-none");
-                document.querySelector(".maincontainer").classList.add("g-1-1");
+                document.querySelector(".maincontainer").classList.add("g-1");
                 document.querySelector(".navigation").classList.remove("d-inline-b");
                 document.querySelector(".maincontainer").classList.remove("g-100-14-1");
 
             }
             else {
                 document.querySelector(".navigation").classList.remove("d-none");
-                document.querySelector(".maincontainer").classList.remove("g-1-1");
+                document.querySelector(".maincontainer").classList.remove("g-1");
                 document.querySelector(".navigation").classList.add("d-inline-b");
                 document.querySelector(".maincontainer").classList.add("g-100-14-1");
             }
         }
+
+
+        // header-back hide-show
+        var m1 = document.getElementById("mid"),
+            c1 = 0;
+        m1.onclick = function () {
+            c1 += 1;
+            if (c1 % 2 != 0) {
+                document.querySelector(".mid1").classList.add("header-mid-active");
+                document.querySelector(".mid1").classList.remove("header-mid-icon");
+                document.querySelector(".header-back-plus").style.display = "inline-block";
+                document.querySelector(".header-back-div").style.display = "inline-block";
+                document.querySelector(".header-back-name").style.display = "inline-block";
+                document.querySelector(".header-mid-icon-1").style.display = "none";
+                document.querySelector(".header-back-hr").style.display = "inline-block";
+                document.querySelector(".header-back-profile").style.display = "inline-block";
+                document.querySelector(".header-back").style.flexDirection = "column";
+
+
+            }
+            else {
+                document.querySelector(".mid1").classList.remove("header-mid-active");
+                document.querySelector(".mid1").classList.add("header-mid-icon");
+                document.querySelector(".header-back-plus").style.display = "none";
+                document.querySelector(".header-back-div").style.display = "none";
+                document.querySelector(".header-back-name").style.display = "none";
+                document.querySelector(".header-back-hr").style.display = "none";
+                document.querySelector(".header-mid-icon-1").style.display = "inline-block";
+                document.querySelector(".header-back-profile").style.display = "none";
+                document.querySelector(".header-back").style.flexDirection = "row";
+            }
+        }
+
     </script>
 </body>
 
