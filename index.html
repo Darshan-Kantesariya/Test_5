@@ -27,7 +27,7 @@
                 </svg>
             </div> -->
 
-            <div class="header-nav logo">
+            <div class="header-nav logo" onclick="nav_click()" id="nav_click">
                 <div class="header-nav-bar1"></div>
                 <div class="header-nav-bar2"></div>
                 <div class="header-nav-bar3"></div>
@@ -713,19 +713,38 @@
             }
         }
 
-        // var button = document.getElementById("show"),
-        //     count = 0;
-        // button.onclick = function () {
-        //     count += 1;
-        //     if (count % 2 == 0) {
-        //         // document.body.style.background = "red";
-        //         document.querySelector(".maincomp-se").style.display = "none";
+        // function nav_click() {
+        //     const box = document.querySelector(".maincontainer");
+        //     if (box.style.gridTemplateColumns = "100px 1.4fr 1fr") {
+        //         document.querySelector(".navigation").style.display = "none";
+        //         document.querySelector(".maincontainer").style.gridTemplateColumns = "1fr 1fr";
         //     }
         //     else {
-        //         // document.body.style.background = "blue";
-        //         document.querySelector(".maincomp-se").style.display = "inline-block";
+        //         document.querySelector(".navigation").style.display = "inline-block";
+        //         document.querySelector(".maincontainer").style.gridTemplateColumns = "100px 1.4fr 1fr";
+
         //     }
+
         // }
+
+        var button = document.getElementById("nav_click"),
+            count = 0;
+        button.onclick = function () {
+            count += 1;
+            if (count % 2 == 0) {
+                document.querySelector(".navigation").classList.add("d-none");
+                document.querySelector(".maincontainer").classList.add("g-1-1");
+                document.querySelector(".navigation").classList.remove("d-inline-b");
+                document.querySelector(".maincontainer").classList.remove("g-100-14-1");
+
+            }
+            else {
+                document.querySelector(".navigation").classList.remove("d-none");
+                document.querySelector(".maincontainer").classList.remove("g-1-1");
+                document.querySelector(".navigation").classList.add("d-inline-b");
+                document.querySelector(".maincontainer").classList.add("g-100-14-1");
+            }
+        }
     </script>
 </body>
 

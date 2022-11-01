@@ -55,6 +55,18 @@ body {
     .side {
       grid-row: 3/span 2; } }
 
+.d-none {
+  display: none; }
+
+.d-inline-b {
+  display: inline-block; }
+
+.g-100-14-1 {
+  grid-template-columns: 100px 1.4fr 1fr; }
+
+.g-1-1 {
+  grid-template-columns: 1fr 1fr; }
+
 img {
   object-fit: cover; }
 
