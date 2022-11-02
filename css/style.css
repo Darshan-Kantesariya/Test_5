@@ -409,7 +409,8 @@ img {
   margin: 1.6rem 0; }
 
 .maincomp {
-  padding: 1rem; }
+  padding: 1rem;
+  height: 100%; }
   @media only screen and (max-width: 751px) {
     .maincomp {
       height: 60rem; } }
@@ -474,10 +475,6 @@ img {
       box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08); }
       .maincomp-grid-box:hover {
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.16); }
-      @media only screen and (max-width: 751px) {
-        .maincomp-grid-box {
-          transform: scale(1.4);
-          margin: 80px; } }
       .maincomp-grid-box-hr {
         position: absolute;
         bottom: 48px;
