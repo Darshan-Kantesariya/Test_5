@@ -30,7 +30,9 @@ body {
   padding: 5px; }
   @media only screen and (max-width: 900px) {
     .maincontainer {
-      grid-template-columns: 100px 1fr; } }
+      grid-template-columns: 1fr;
+      margin-bottom: 5rem;
+      overflow: hidden; } }
 
 .header {
   height: 70px;
@@ -41,6 +43,9 @@ body {
   height: 45rem;
   grid-row: 2 / span 2;
   background-color: var(--color-bg); }
+  @media only screen and (max-width: 900px) {
+    .navigation {
+      display: none; } }
 
 .maincomp {
   height: 45rem;
@@ -61,7 +66,7 @@ body {
   @media only screen and (max-width: 900px) {
     .chatSymbol {
       position: fixed;
-      bottom: 3rem;
+      bottom: 6rem;
       right: 3rem;
       height: 4rem;
       width: 4rem;
@@ -88,7 +93,8 @@ body {
       z-index: 1;
       position: fixed;
       top: 0px;
-      left: 0px; } }
+      left: 0px;
+      transition: all 0.1s; } }
 
 .chat {
   display: none; }
@@ -109,25 +115,37 @@ body {
   display: none; }
   @media only screen and (max-width: 900px) {
     .closebtn {
-      width: 80%;
-      height: 8%;
       margin: 0 10%;
-      margin-top: -5%;
       position: fixed;
       right: 0px;
-      bottom: 5px;
+      top: 15px;
       z-index: 2; } }
+  .closebtn-div {
+    border-radius: 1rem; }
+    @media only screen and (max-width: 900px) {
+      .closebtn-div {
+        margin: 0 auto;
+        height: 3rem;
+        width: 3rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 12px black; } }
+
+.bottombar {
+  display: none; }
   @media only screen and (max-width: 900px) {
-    .closebtn-div {
-      margin: 0 auto;
-      height: 4rem;
-      width: 4rem;
-      background: radial-gradient(circle, #7a7a7a 0%, rgba(255, 255, 255, 0.5) 100%, white 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      border: 1px solid black; } }
+    .bottombar {
+      display: inline-block;
+      height: 5rem;
+      width: 100%;
+      position: fixed;
+      background-color: var(--color-bg);
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      margin: 0 auto; } }
 
 .d-none {
   display: none; }
@@ -136,7 +154,7 @@ body {
   display: inline-block; }
 
 .g-100-14-1 {
-  grid-template-columns: 100px 1.4fr 1fr; }
+  grid-template-columns: 100px 1.4fr; }
 
 .g-1 {
   grid-template-columns: 1fr; }
@@ -375,6 +393,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .nav-logo {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 5rem; } }
 
 .home-logo {
   background-color: #1f1c2f;
@@ -448,10 +472,6 @@ img {
       box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08); }
       .maincomp-grid-box:hover {
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.16); }
-      @media only screen and (max-width: 751px) {
-        .maincomp-grid-box {
-          transform: scale(1.4);
-          margin: 80px; } }
       .maincomp-grid-box-hr {
         position: absolute;
         bottom: 48px;
@@ -614,7 +634,7 @@ img {
       width: 1.4rem;
       margin: 0.2rem; }
   .maincomp-card {
-    height: 80vh;
+    height: 60vh;
     width: 100%; }
 
 .bar-2 {

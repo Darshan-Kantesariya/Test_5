@@ -104,10 +104,10 @@ $background-color_3: #2bc6ff40;
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.16);
       }
 
-      @media only screen and (max-width: 751px) {
-        transform: scale(1.4);
-        margin: 80px;
-      }
+      // @media only screen and (max-width: 751px) {
+      //   transform: scale(1.4);
+      //   margin: 80px;
+      // }
 
       &-hr {
         position: absolute;
@@ -324,7 +324,7 @@ $background-color_3: #2bc6ff40;
   }
 
   &-card {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
   }
 }
