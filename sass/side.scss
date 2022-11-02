@@ -12,6 +12,12 @@
   padding: 0 2rem;
   margin-top: 2rem;
 
+  @media only screen and (max-width: 900px) {
+    margin-top: 0.5rem;
+  }
+
+
+
   &-logo {
     /* background-color: chartreuse; */
     /* margin-left: auto; */
@@ -67,6 +73,10 @@
   /* overflow-x: hidden; */
   cursor: pointer;
   //   margin-top: 1rem;
+
+  @media only screen and (max-width: 900px) {
+    height: 90%;
+  }
 
 
 &::-webkit-scrollbar{

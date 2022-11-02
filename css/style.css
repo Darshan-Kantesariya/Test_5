@@ -53,7 +53,80 @@ body {
   background-color: var(--color-bg); }
   @media only screen and (max-width: 900px) {
     .side {
-      grid-row: 3/span 2; } }
+      grid-row: 3 / span 2;
+      display: none; } }
+
+.chatSymbol {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    .chatSymbol {
+      position: fixed;
+      bottom: 5rem;
+      right: 5rem;
+      height: 5rem;
+      width: 5rem;
+      background-color: white;
+      border-radius: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1; } }
+  @media only screen and (max-width: 900px) {
+    .chatSymbol-svg {
+      height: 4rem;
+      width: 4rem; } }
+
+.chatblur {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    .chatblur {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: red;
+      z-index: 1;
+      position: fixed;
+      top: 0px;
+      left: 0px; } }
+
+.chat {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    .chat {
+      width: 80%;
+      height: 80%;
+      margin: 10%;
+      margin-bottom: 0%;
+      position: fixed;
+      border-radius: 1rem;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+      background-color: white; } }
+
+.closebtn {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    .closebtn {
+      width: 80%;
+      height: 8%;
+      margin: 0 10%;
+      margin-top: -5%;
+      position: fixed;
+      right: 0px;
+      bottom: 5px;
+      z-index: 2; } }
+  @media only screen and (max-width: 900px) {
+    .closebtn-div {
+      margin: 0 auto;
+      height: 4rem;
+      width: 4rem;
+      background: radial-gradient(circle, #7a7a7a 0%, rgba(255, 255, 255, 0.5) 100%, white 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid black; } }
 
 .d-none {
   display: none; }
@@ -310,6 +383,9 @@ img {
 
 .maincomp {
   padding: 1rem; }
+  @media only screen and (max-width: 751px) {
+    .maincomp {
+      height: 60rem; } }
   .maincomp-se {
     display: none;
     width: 100%;
@@ -338,7 +414,7 @@ img {
         height: 1rem;
         width: 1rem;
         color: grey;
-        z-index: 1; }
+        z-index: 0; }
   .maincomp-grid {
     display: flex;
     width: 100%;
@@ -348,6 +424,9 @@ img {
     justify-content: center;
     overflow-y: scroll;
     cursor: pointer; }
+    @media only screen and (max-width: 751px) {
+      .maincomp-grid {
+        height: 48rem; } }
     .maincomp-grid::-webkit-scrollbar {
       display: none; }
     .maincomp-grid-box2 {
@@ -368,6 +447,10 @@ img {
       box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08); }
       .maincomp-grid-box:hover {
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.16); }
+      @media only screen and (max-width: 751px) {
+        .maincomp-grid-box {
+          transform: scale(1.4);
+          margin: 80px; } }
       .maincomp-grid-box-hr {
         position: absolute;
         bottom: 48px;
@@ -454,7 +537,7 @@ img {
               height: 1.3rem;
               width: 1.3rem;
               border-radius: 50%;
-              margin-left: -0.7rem; }
+              margin-left: -0.5rem; }
           .maincomp-grid-box-foot-people-div {
             height: 1.3rem;
             width: 1.3rem !important;
@@ -576,6 +659,9 @@ img {
   /* border-width: 20px; */
   padding: 0 2rem;
   margin-top: 2rem; }
+  @media only screen and (max-width: 900px) {
+    .side-title {
+      margin-top: 0.5rem; } }
   .side-title-logo {
     /* background-color: chartreuse; */
     /* margin-left: auto; */
@@ -619,6 +705,9 @@ img {
   overflow-y: scroll;
   /* overflow-x: hidden; */
   cursor: pointer; }
+  @media only screen and (max-width: 900px) {
+    .side-detail {
+      height: 90%; } }
   .side-detail::-webkit-scrollbar {
     display: none; }
   .side-detail-pad {

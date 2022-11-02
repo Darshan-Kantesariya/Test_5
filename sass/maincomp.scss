@@ -8,6 +8,10 @@ $background-color_3: #2bc6ff40;
 .maincomp {
   padding: 1rem;
 
+  @media only screen and (max-width: 751px) {
+    height: 60rem;
+  }
+
   &-se {
     display: none;
     width: 100%;
@@ -53,7 +57,7 @@ $background-color_3: #2bc6ff40;
         // background-color: rgb(215, 212, 212);
         color: grey;
         // fill: black;
-        z-index: 1;
+        z-index: 0;
       }
     }
   }
@@ -67,6 +71,9 @@ $background-color_3: #2bc6ff40;
     justify-content: center;
     overflow-y: scroll;
     cursor: pointer;
+    @media only screen and (max-width: 751px) {
+      height: 48rem;
+    }
 
     &::-webkit-scrollbar {
       display: none;
@@ -95,6 +102,11 @@ $background-color_3: #2bc6ff40;
       box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08);
       &:hover {
         box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.16);
+      }
+
+      @media only screen and (max-width: 751px) {
+        transform: scale(1.4);
+        margin: 80px;
       }
 
       &-hr {
@@ -205,7 +217,7 @@ $background-color_3: #2bc6ff40;
               height: 1.3rem;
               width: 1.3rem;
               border-radius: 50%;
-              margin-left: -0.7rem;
+              margin-left: -0.5rem;
             }
           }
           &-div {
