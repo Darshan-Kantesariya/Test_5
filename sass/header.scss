@@ -217,6 +217,9 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
 
     &-bar2 {
       width: 30px;
