@@ -1,21 +1,18 @@
 :root {
-  --color-primary-font: #989b9a;
-  --color-white: white;
-  --color-black: black;
-  --color-bg: #f3f6fd;
 
-  $color_1: #484848;
-  $color_2: #6b6b6b;
-  $color_3: #2bc6ff;
+  --color-background:#fff;
+  --color-menu:#ebe3d7;
+  --color-card-1:#fcbda3;
+  --color-card-2:#fce5bc;
+  --color-font-1:#443d37;
+  --color-font-2:#b5a79e;
+  --color-side-card:#f0884e;
+  --color-other-1:#c2a273;
+  --color-other2:#48a99c;
 
-  $background-color_2: #2bc8ff;
-  $background-color_3: #2bc6ff40;
 
-  $red: red;
-  $black: black;
-  $home-logo: #1f1c2f;
-  $white: white;
-  $color_1: #484848;
+
+
 }
 
 * {
@@ -30,15 +27,9 @@
   box-sizing: inherit;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: var(--color-bg);
-  // font-family: ;
-  // position: relative;
- 
+
 }

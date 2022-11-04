@@ -1,96 +1,103 @@
+  // menu hide-show
 
-    // search in header hide-show
-    function show() {
-        const box = document.querySelector(".maincomp-se");
-        if (box.style.display != "none") {
-            document.querySelector(".maincomp-se").style.display = "none";
-        }
-        else {
-            document.querySelector(".maincomp-se").style.display = "inline-block";
-        }
+//   let button = document.querySelector(".menu-list-drop-team"),
+//   count = 0;
+// button.onclick = function () {
+//   count += 1;
+//   if (count % 2 != 0) {
+//     document.querySelector(".menu-list-drop-ele").style.display = "none";
+    
+//   }
+//   else {
+//     document.querySelector(".menu-list-drop-ele").style.display = "inline-block";
+//   }
+// }
+
+  // menu hide-show
+
+  function show() {
+    const box = document.querySelector(".menu-list-drop-ele");
+    if (box.style.display == "inline-block") {
+        box.style.display = "none";
+        document.querySelector(".menu-list-drop").style.height = "1.5rem";
+        document.querySelector(".menu-list-drop-team-icon").style.transform = "rotate(90deg)";
     }
-
-
-    // navigation hide-show
-
-    var button = document.getElementById("nav_click"),
-        count = 0;
-    button.onclick = function () {
-        count += 1;
-        if (count % 2 != 0) {
-            document.querySelector(".navigation").classList.add("d-none");
-            document.querySelector(".maincontainer").classList.add("g-1");
-            document.querySelector(".navigation").classList.remove("d-inline-b");
-            document.querySelector(".maincontainer").classList.remove("g-100-14-1");
-
-        }
-        else {
-            document.querySelector(".navigation").classList.remove("d-none");
-            document.querySelector(".maincontainer").classList.remove("g-1");
-            document.querySelector(".navigation").classList.add("d-inline-b");
-            document.querySelector(".maincontainer").classList.add("g-100-14-1");
-        }
+    else {
+        box.style.display = "inline-block";
+        document.querySelector(".menu-list-drop").style.height = "6rem";
+        document.querySelector(".menu-list-drop-team-icon").style.transform = "rotate(0deg)";
     }
+}
 
-
-    // header-back hide-show
-    var m1 = document.getElementById("mid"),
-        c1 = 0;
-    m1.onclick = function () {
-        c1 += 1;
-        if (c1 % 2 != 0) {
-            document.querySelector(".mid1").classList.add("header-mid-active");
-            document.querySelector(".mid1").classList.remove("header-mid-icon");
-            document.querySelector(".header-back-plus").style.display = "inline-block";
-            document.querySelector(".header-back-div").style.display = "inline-block";
-            document.querySelector(".header-back-name").style.display = "inline-block";
-            document.querySelector(".header-mid-icon-1").style.display = "none";
-            document.querySelector(".header-back-hr").style.display = "inline-block";
-            document.querySelector(".header-back-profile").style.display = "inline-block";
-            document.querySelector(".header-back").style.flexDirection = "column";
-
-
-        }
-        else {
-            document.querySelector(".mid1").classList.remove("header-mid-active");
-            document.querySelector(".mid1").classList.add("header-mid-icon");
-            document.querySelector(".header-back-plus").style.display = "none";
-            document.querySelector(".header-back-div").style.display = "none";
-            document.querySelector(".header-back-name").style.display = "none";
-            document.querySelector(".header-back-hr").style.display = "none";
-            document.querySelector(".header-mid-icon-1").style.display = "inline-block";
-            document.querySelector(".header-back-profile").style.display = "none";
-            document.querySelector(".header-back").style.flexDirection = "row";
-        }
+function show1() {
+    const box = document.querySelector(".menu-list-drop-ele1");
+    if (box.style.display != "none") {
+        box.style.display = "none";
+        document.querySelector(".menu-list-drop1").style.height = "1.5rem";
+        document.querySelector(".menu-list-drop-team-icon1").style.transform = "rotate(90deg)";
     }
-
-
-
-    // chat bot hide-show
-    var m2 = document.getElementById("chat_click");
-
-    m2.onclick = function () {
-
-        document.querySelector(".chat").style.display = "inline-block";
-        document.querySelector(".chatblur").style.display = "inline-block";
-        document.querySelector(".closebtn").style.display = "inline-block";
-        document.querySelector(".chatblur").style.background = "rgba(0,0,0,0.5)";
-        document.querySelector(".closebtn").style.display = "inline-block";
-        document.querySelector(".chatSymbol").classList.add("d-none");
-        // document.querySelector(".maincontainer").style.zIndex = "2";
-
-
-
-
+    else {
+        box.style.display = "inline-block";
+        document.querySelector(".menu-list-drop1").style.height = "11.5rem";
+        document.querySelector(".menu-list-drop-team-icon1").style.transform = "rotate(0deg)";
     }
+}
 
-    // close btn hide-show
-    var m3 = document.getElementById("close");
-    m3.onclick = function () {
-        document.querySelector(".chat").style.display = "none";
-        document.querySelector(".chatblur").style.display = "none";
-        document.querySelector(".chatSymbol").classList.remove("d-none");
+function show2() {
+    const box = document.querySelector(".menu-list-drop-ele2");
+    if (box.style.display != "none") {
+        box.style.display = "none";
+        document.querySelector(".menu-list-drop2").style.height = "1.5rem";
+        document.querySelector(".menu-list-drop-team-icon2").style.transform = "rotate(90deg)";
     }
+    else {
+        box.style.display = "inline-block";
+        document.querySelector(".menu-list-drop2").style.height = "9rem";
+        document.querySelector(".menu-list-drop-team-icon2").style.transform = "rotate(0deg)";
+    }
+}
 
+function show3() {
+    const box = document.querySelector(".menu-list-drop-ele3");
+    if (box.style.display == "inline-block") {
+        box.style.display = "none";
+        document.querySelector(".menu-list-drop3").style.height = "1.5rem";
+        document.querySelector(".menu-list-drop-team-icon3").style.transform = "rotate(90deg)";
+    }
+    else {
+        box.style.display = "inline-block";
+        document.querySelector(".menu-list-drop3").style.height = "6rem";
+        document.querySelector(".menu-list-drop-team-icon3").style.transform = "rotate(0deg)";
+    }
+}
 
+function show4() {
+    const box = document.querySelector(".menu-list-drop-ele4");
+    if (box.style.display == "inline-block") {
+        box.style.display = "none";
+        document.querySelector(".menu-list-drop4").style.height = "1.5rem";
+        document.querySelector(".menu-list-drop-team-icon4").style.transform = "rotate(90deg)";
+    }
+    else {
+        box.style.display = "inline-block";
+        document.querySelector(".menu-list-drop4").style.height = "6rem";
+        document.querySelector(".menu-list-drop-team-icon4").style.transform = "rotate(0deg)";
+    }
+}
 
+function btn1(){
+    document.querySelector(".card-rim-box-button-1").style.backgroundColor="var(--color-card-1)";
+    document.querySelector(".card-rim-box-button-2").style.backgroundColor="#fcbea358";
+    document.querySelector(".card-rim-box-button-3").style.backgroundColor="#fcbea358";
+}
+function btn2(){
+    document.querySelector(".card-rim-box-button-1").style.backgroundColor="#fcbea358";
+    document.querySelector(".card-rim-box-button-2").style.backgroundColor="var(--color-card-1)";
+    document.querySelector(".card-rim-box-button-3").style.backgroundColor="#fcbea358";
+}
+function btn3(){
+    document.querySelector(".card-rim-box-button-1").style.backgroundColor="#fcbea358";
+    document.querySelector(".card-rim-box-button-2").style.backgroundColor="#fcbea358";
+    document.querySelector(".card-rim-box-button-3").style.backgroundColor="var(--color-card-1)";
+
+}
