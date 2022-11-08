@@ -263,7 +263,8 @@ img {
         word-wrap: break-word; }
         @media only screen and (max-width: 600px) {
           .menu-list-drop-ele-list, .menu-list-drop-ele1-list, .menu-list-drop-ele2-list, .menu-list-drop-ele3-list, .menu-list-drop-ele4-list, .menu-list-drop1-ele-list, .menu-list-drop1-ele1-list, .menu-list-drop1-ele2-list, .menu-list-drop1-ele3-list, .menu-list-drop1-ele4-list, .menu-list-drop2-ele-list, .menu-list-drop2-ele1-list, .menu-list-drop2-ele2-list, .menu-list-drop2-ele3-list, .menu-list-drop2-ele4-list, .menu-list-drop3-ele-list, .menu-list-drop3-ele1-list, .menu-list-drop3-ele2-list, .menu-list-drop3-ele3-list, .menu-list-drop3-ele4-list, .menu-list-drop4-ele-list, .menu-list-drop4-ele1-list, .menu-list-drop4-ele2-list, .menu-list-drop4-ele3-list, .menu-list-drop4-ele4-list {
-            padding: 0.3rem; } }
+            padding: 0.3rem;
+            background-color: var(--color-menu); } }
   .menu-list-drop1 {
     height: 11.5rem; }
     @media only screen and (max-width: 600px) {
