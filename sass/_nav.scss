@@ -1,98 +1,123 @@
-.nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: row;
+    // justify-content: space-between;
     align-items: center;
-    // height: 41.75rem;
+  }
+  // height: 41.75rem;
 
-    &-top{
-        height: 4rem;
-        width: 3rem;
-        background-color: var(--color-background);
-        border-bottom: 0.5px solid #b5a79e38;
+  &-top {
+    height: 4rem;
+    width: 3rem;
+    background-color: var(--color-background);
+    border-bottom: 0.5px solid #b5a79e38;
 
-        &-logo{
-            height: 4rem;
-            width: 3rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &-o{
-                height: 1.5rem;
-                width: 1.5rem;
-                border: 1.5px solid black;
-                border-radius: 50%;
-                font-size: 4rem;
-            }
-        }
-        &-z{
-            position: absolute;
-            top: 18px;
-            left: 10px;
-            font-size: 1.8rem;
-            font-weight: 300;
-            transform: rotate(58deg);
-        }
+    @media only screen and (max-width: 600px) {
+      width: 4rem;
+      height: 3rem;
     }
 
-    &-mid{
-        height: 18rem;
-        width: 3rem;
-        background-color: var(--color-background);
-        color: var(--color-font-1);
+    &-logo {
+      height: 4rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        &-home{
-            height: 3rem;
-            width: 3rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            stroke-width: 1.5;
-
-            &:first-child{
-                background-color: var(--color-menu);
-                // transform: scale(1.2);
-                color: var(--color-font-1);
-                stroke-width: 1.8;
-                &>svg{
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
-            }
-
-            &>svg{
-                height: 1.2rem;
-                width: 1.2rem;
-            }
-
-            &:hover{
-                background-color: var(--color-menu);
-                color: var(--color-font-1);
-                stroke-width: 1.8;
-                &>svg{
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
-            }
-        }
-
-    }
-
-    &-bottom{
+      @media only screen and (max-width: 600px) {
+        width: 4rem;
         height: 3rem;
-        width: 3rem;
-        background-color: var(--color-background);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        &>svg{
-            height: 2rem;
-            width: 2rem;
+      }
 
-
-        }
-
+      &-o {
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 1.5px solid black;
+        border-radius: 50%;
+        font-size: 4rem;
+      }
     }
+    &-z {
+      position: absolute;
+      top: 18px;
+      left: 10px;
+      font-size: 1.8rem;
+      font-weight: 300;
+      transform: rotate(58deg);
+      @media only screen and (max-width: 600px) {
+        top: 11px;
+        left: 16px;
+      }
+    }
+  }
+
+  &-mid {
+    height: 18rem;
+    width: 3rem;
+    background-color: var(--color-background);
+    color: var(--color-font-1);
+
+    @media only screen and (max-width: 1200px) {
+      width: 18rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-home {
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      stroke-width: 1.5;
+
+      &:first-child {
+        background-color: var(--color-menu);
+        // transform: scale(1.2);
+        color: var(--color-font-1);
+        stroke-width: 1.8;
+        & > svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      & > svg {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+
+      &:hover {
+        background-color: var(--color-menu);
+        color: var(--color-font-1);
+        stroke-width: 1.8;
+        & > svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
 }

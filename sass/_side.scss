@@ -1,5 +1,27 @@
 .side {
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: row-reverse;
+    gap:30px
+  }
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &-main{
+    width: 100%;
+    @media only screen and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
 
   &-dot {
     width: 100%;
@@ -207,6 +229,13 @@
   &-task {
     margin-top: 2rem;
     width: 100%;
+
+    @media only screen and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
     &-title {
       width: 100%;
       display: flex;

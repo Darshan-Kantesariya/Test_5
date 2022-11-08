@@ -26,10 +26,15 @@
     width: 100%;
     height: 90vh;
     padding: 1.5rem;
-    overflow: scroll;
+    
 
     @media only screen and (max-width: 1200px) {
       height: 90vh;
+      overflow: scroll;
+    }
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      // flex-direction: column;
     }
 
     &-drop,
@@ -42,6 +47,13 @@
       transition: all 0.2s;
       margin-bottom: 0.5rem;
 
+      @media only screen and (max-width: 600px) {
+      //  width: 20%;
+       gap: 10px;
+       z-index: 1;
+       background-color: var(--color-menu);
+      }
+
       &-team {
         width: 100%;
         height: 1.5rem;
@@ -49,6 +61,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: 600px) {
+          // width: 20%;
+          justify-content: space-around;
+        }
 
         &-name {
           font-size: 0.9rem;
