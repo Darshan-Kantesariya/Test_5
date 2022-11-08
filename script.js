@@ -24,7 +24,9 @@
     }
     else {
         box.style.display = "inline-block";
-        // document.querySelector(".menu-list-drop").style.height = "7rem";
+        if(window.innerWidth>600){
+        document.querySelector(".menu-list-drop").style.height = "6rem";
+        }
         document.querySelector(".menu-list-drop-team-icon").style.transform = "rotate(0deg)";
     }
 }
@@ -38,7 +40,9 @@ function show1() {
     }
     else {
         box.style.display = "inline-block";
-        // document.querySelector(".menu-list-drop1").style.height = "16rem";
+        if(window.innerWidth>600){
+        document.querySelector(".menu-list-drop1").style.height = "11.5rem";
+        }
         document.querySelector(".menu-list-drop-team-icon1").style.transform = "rotate(0deg)";
     }
 }
@@ -52,7 +56,9 @@ function show2() {
     }
     else {
         box.style.display = "inline-block";
-        // document.querySelector(".menu-list-drop2").style.height = "10rem";
+        if(window.innerWidth>600){
+        document.querySelector(".menu-list-drop2").style.height = "9rem";
+        }
         document.querySelector(".menu-list-drop-team-icon2").style.transform = "rotate(0deg)";
     }
 }
@@ -66,7 +72,9 @@ function show3() {
     }
     else {
         box.style.display = "inline-block";
-        // document.querySelector(".menu-list-drop3").style.height = "7rem";
+        if(window.innerWidth>600){
+        document.querySelector(".menu-list-drop3").style.height = "6rem";
+        }
         document.querySelector(".menu-list-drop-team-icon3").style.transform = "rotate(0deg)";
     }
 }
@@ -80,6 +88,9 @@ function show4() {
     }
     else {
         box.style.display = "inline-block";
+        if(window.innerWidth>600){
+        document.querySelector(".menu-list-drop4").style.height = "7rem";
+        }
         // document.querySelector(".menu-list-drop4").style.height = "8rem";
         document.querySelector(".menu-list-drop-team-icon4").style.transform = "rotate(0deg)";
     }
