@@ -37,6 +37,7 @@
       // flex-direction: column;
     }
 
+    
     &-drop,
     &-drop1,
     &-drop2,
@@ -102,7 +103,7 @@
         // display: none;
 
         @media only screen and (max-width: 600px) {
-          font-size: 0.5rem
+          font-size: 0.64rem
          }
 
         &-list {
@@ -119,13 +120,13 @@
     &-drop1 {
       height: 11.5rem;
       @media only screen and (max-width: 600px) {
-        height: 9.2rem;
+        // height: 9.2rem;
        }
     }
     &-drop2 {
       height: 9rem;
       @media only screen and (max-width: 600px) {
-        height: 7.5rem;
+        // height: 7.5rem;
        }
     }
     &-drop,

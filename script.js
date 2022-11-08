@@ -80,7 +80,7 @@ function show4() {
     }
     else {
         box.style.display = "inline-block";
-        document.querySelector(".menu-list-drop4").style.height = "6rem";
+        document.querySelector(".menu-list-drop4").style.height = "6.5rem";
         document.querySelector(".menu-list-drop-team-icon4").style.transform = "rotate(0deg)";
     }
 }
