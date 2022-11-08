@@ -27,13 +27,19 @@
     height: 90vh;
     padding: 1.5rem;
     
+    overflow-y: scroll;
+    cursor: pointer;
+
+    &::-webkit-scrollbar {
+      display: none; }
 
     @media only screen and (max-width: 1200px) {
       height: 90vh;
-      overflow: scroll;
+     
     }
     @media only screen and (max-width: 600px) {
       display: flex;
+      gap: 10px;
       // flex-direction: column;
     }
 
@@ -64,7 +70,7 @@
         align-items: center;
         @media only screen and (max-width: 600px) {
           // width: 20%;
-          justify-content: space-around;
+          // justify-content: space-around;
         }
 
         &-name {
@@ -85,6 +91,10 @@
           transform: rotate(0deg);
           transition: all 0.2s;
 
+          @media only screen and (max-width: 600px) {
+            display: none;
+          }
+
           & > svg {
             height: 1rem;
             width: 1rem;
@@ -103,7 +113,8 @@
         // display: none;
 
         @media only screen and (max-width: 600px) {
-          font-size: 0.64rem
+          font-size: 0.64rem;
+          display: none;
          }
 
         &-list {
@@ -120,13 +131,13 @@
     &-drop1 {
       height: 11.5rem;
       @media only screen and (max-width: 600px) {
-        // height: 9.2rem;
+        height: 1.5rem;
        }
     }
     &-drop2 {
       height: 9rem;
       @media only screen and (max-width: 600px) {
-        // height: 7.5rem;
+        height: 1.5rem;
        }
     }
     &-drop,
@@ -139,6 +150,9 @@
 
         &-icon,&-icon3,&-icon4{
             transform: rotate(90deg);
+            @media only screen and (max-width: 600px) {
+              transform: rotate(0deg);
+             }
         }
       }
 
@@ -146,6 +160,9 @@
       &-ele3,
       &-ele4 {
         display: none;
+        // @media only screen and (max-width: 700px) {
+        //  display: inline-block;
+        // }
       }
     }
   }
