@@ -211,6 +211,7 @@ img {
     margin-bottom: 0.5rem; }
     @media only screen and (max-width: 600px) {
       .menu-list-drop, .menu-list-drop1, .menu-list-drop2, .menu-list-drop3, .menu-list-drop4 {
+        width: 20%;
         gap: 10px;
         z-index: 1;
         background-color: var(--color-menu); } }
@@ -241,13 +242,25 @@ img {
       display: inline-block;
       font-size: 0.8rem;
       list-style-type: none; }
+      @media only screen and (max-width: 600px) {
+        .menu-list-drop-ele, .menu-list-drop-ele1, .menu-list-drop-ele2, .menu-list-drop-ele3, .menu-list-drop-ele4, .menu-list-drop1-ele, .menu-list-drop1-ele1, .menu-list-drop1-ele2, .menu-list-drop1-ele3, .menu-list-drop1-ele4, .menu-list-drop2-ele, .menu-list-drop2-ele1, .menu-list-drop2-ele2, .menu-list-drop2-ele3, .menu-list-drop2-ele4, .menu-list-drop3-ele, .menu-list-drop3-ele1, .menu-list-drop3-ele2, .menu-list-drop3-ele3, .menu-list-drop3-ele4, .menu-list-drop4-ele, .menu-list-drop4-ele1, .menu-list-drop4-ele2, .menu-list-drop4-ele3, .menu-list-drop4-ele4 {
+          font-size: 0.5rem; } }
       .menu-list-drop-ele-list, .menu-list-drop-ele1-list, .menu-list-drop-ele2-list, .menu-list-drop-ele3-list, .menu-list-drop-ele4-list, .menu-list-drop1-ele-list, .menu-list-drop1-ele1-list, .menu-list-drop1-ele2-list, .menu-list-drop1-ele3-list, .menu-list-drop1-ele4-list, .menu-list-drop2-ele-list, .menu-list-drop2-ele1-list, .menu-list-drop2-ele2-list, .menu-list-drop2-ele3-list, .menu-list-drop2-ele4-list, .menu-list-drop3-ele-list, .menu-list-drop3-ele1-list, .menu-list-drop3-ele2-list, .menu-list-drop3-ele3-list, .menu-list-drop3-ele4-list, .menu-list-drop4-ele-list, .menu-list-drop4-ele1-list, .menu-list-drop4-ele2-list, .menu-list-drop4-ele3-list, .menu-list-drop4-ele4-list {
         padding: 0.3rem 1rem;
         word-wrap: break-word; }
+        @media only screen and (max-width: 600px) {
+          .menu-list-drop-ele-list, .menu-list-drop-ele1-list, .menu-list-drop-ele2-list, .menu-list-drop-ele3-list, .menu-list-drop-ele4-list, .menu-list-drop1-ele-list, .menu-list-drop1-ele1-list, .menu-list-drop1-ele2-list, .menu-list-drop1-ele3-list, .menu-list-drop1-ele4-list, .menu-list-drop2-ele-list, .menu-list-drop2-ele1-list, .menu-list-drop2-ele2-list, .menu-list-drop2-ele3-list, .menu-list-drop2-ele4-list, .menu-list-drop3-ele-list, .menu-list-drop3-ele1-list, .menu-list-drop3-ele2-list, .menu-list-drop3-ele3-list, .menu-list-drop3-ele4-list, .menu-list-drop4-ele-list, .menu-list-drop4-ele1-list, .menu-list-drop4-ele2-list, .menu-list-drop4-ele3-list, .menu-list-drop4-ele4-list {
+            padding: 0.3rem; } }
   .menu-list-drop1 {
     height: 11.5rem; }
+    @media only screen and (max-width: 600px) {
+      .menu-list-drop1 {
+        height: 9.2rem; } }
   .menu-list-drop2 {
     height: 9rem; }
+    @media only screen and (max-width: 600px) {
+      .menu-list-drop2 {
+        height: 7.5rem; } }
   .menu-list-drop, .menu-list-drop3, .menu-list-drop4 {
     height: 1.5rem; }
     .menu-list-drop-team-icon, .menu-list-drop-team-icon3, .menu-list-drop-team-icon4, .menu-list-drop3-team-icon, .menu-list-drop3-team-icon3, .menu-list-drop3-team-icon4, .menu-list-drop4-team-icon, .menu-list-drop4-team-icon3, .menu-list-drop4-team-icon4 {
