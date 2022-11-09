@@ -44,7 +44,7 @@
     }
 
     
-    &-drop,
+    &-drop5,
     &-drop1,
     &-drop2,
     &-drop3,
@@ -78,7 +78,7 @@
           font-weight: 500;
         }
 
-        &-icon,
+        &-icon5,
         &-icon1,
         &-icon2,
         &-icon3,
@@ -102,7 +102,7 @@
         }
       }
 
-      &-ele,
+      &-ele5,
       &-ele1,
       &-ele2,
       &-ele3,
@@ -141,7 +141,7 @@
         height: 1.5rem;
        }
     }
-    &-drop,
+    &-drop5,
     &-drop3,
     &-drop4 {
       height: 1.5rem;
@@ -149,7 +149,7 @@
 
       &-team{
 
-        &-icon,&-icon3,&-icon4{
+        &-icon5,&-icon3,&-icon4{
             transform: rotate(90deg);
             @media only screen and (max-width: 600px) {
               transform: rotate(0deg);
@@ -157,11 +157,11 @@
         }
       }
 
-      &-ele,
+      &-ele5,
       &-ele3,
       &-ele4 {
         display: none;
-        // @media only screen and (max-width: 700px) {
+        // @media only screen and (min-width: 700px) {
         //  display: inline-block;
         // }
       }
