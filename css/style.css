@@ -55,8 +55,11 @@ body {
     .shade {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 82vh;
       padding-bottom: 20px; } }
+  @media only screen and (max-width: 600px) {
+    .shade {
+      height: 100vh !important; } }
 
 .nav {
   background-color: var(--color-background);
@@ -70,8 +73,13 @@ body {
 
 .card {
   background-color: var(--color-background);
-  background-color: #f7f7f7;
-  height: 100%; }
+  background-color: #f7f7f7; }
+  @media only screen and (min-width: 1200px) {
+    .card {
+      height: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .card {
+      height: 70rem !important; } }
 
 .side {
   background-color: var(--color-background);
@@ -80,6 +88,9 @@ body {
   @media only screen and (max-width: 1200px) {
     .side {
       width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .side {
+      height: 20rem !important; } }
 
 img {
   object-fit: cover; }
@@ -205,7 +216,7 @@ img {
 
 .menu-list {
   width: 100%;
-  height: 82vh;
+  height: 85vh;
   padding: 1.5rem;
   overflow-y: scroll;
   cursor: pointer; }
@@ -288,10 +299,7 @@ img {
 
 .card {
   width: 100%;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  padding: 0rem 2rem; }
   .card-title {
     width: 100%;
     height: 15%;
@@ -313,9 +321,6 @@ img {
       height: 2rem;
       border-radius: 2rem;
       margin-left: 13px; }
-  @media only screen and (max-width: 600px) {
-    .card-box {
-      height: 100%; } }
   .card-box-title {
     width: 100%;
     display: flex;
@@ -339,7 +344,7 @@ img {
         gap: 1rem; } }
     .card-box-card-left {
       width: 47.5%;
-      height: 24rem;
+      height: 22rem;
       border-radius: 1rem;
       background-color: var(--color-card-1);
       padding: 1.5rem; }
@@ -372,6 +377,10 @@ img {
             font-weight: 500;
             color: white;
             background-color: black; }
+            .card-box-card-left-title-image-div:hover {
+              background-color: var(--color-card-1);
+              color: black;
+              border-color: black; }
             .card-box-card-left-title-image-div-1 {
               height: 2.5rem;
               width: 2.5rem;
@@ -384,6 +393,10 @@ img {
               font-weight: 500;
               color: white;
               background-color: black; }
+              .card-box-card-left-title-image-div-1:hover {
+                background-color: var(--color-card-2);
+                color: black;
+                border-color: black; }
           .card-box-card-left-title-image-img {
             height: 2.5rem;
             width: 2.5rem;
@@ -453,7 +466,7 @@ img {
       animation: marquee 20s linear infinite; }
       .card-rim-box-cover {
         display: flex;
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
         overflow: hidden;
         scroll-behavior: smooth; }
         .card-rim-box-cover-1 {
@@ -519,10 +532,7 @@ img {
     z-index: 1; }
 
 .side {
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  padding: 0 2rem; }
   @media only screen and (max-width: 1200px) {
     .side {
       flex-direction: row-reverse;
@@ -650,6 +660,10 @@ img {
         height: 3rem;
         width: 3rem;
         border-radius: 50%; }
+        .side-members-img-1:hover {
+          height: 3.2rem;
+          width: 3.2rem;
+          cursor: pointer; }
       .side-members-img-cir {
         height: 3rem;
         width: 3rem;
@@ -660,6 +674,9 @@ img {
         display: flex;
         justify-content: center;
         align-items: center; }
+        .side-members-img-cir:hover {
+          height: 3.2rem;
+          width: 3.2rem; }
       .side-members-img-div {
         height: 1.6rem;
         width: 1.6rem;
@@ -705,7 +722,8 @@ img {
         height: 100%; } }
     @media only screen and (max-width: 900px) {
       .side-task {
-        width: 100%; } }
+        width: 100%;
+        height: 0; } }
     .side-task-title {
       width: 100%;
       display: flex;

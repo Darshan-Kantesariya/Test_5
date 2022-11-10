@@ -15,19 +15,23 @@ button.onclick = function () {
 
 // menu hide-show
 
-function show() {
-  const box = document.querySelector(".menu-list-drop5-ele5");
+function show(b) {
+  var n = b;
+  // var n = 4
+
+  const box = document.querySelector(`.menu-list-drop5-ele${n}`);
   if (box.style.display == "inline-block") {
     box.style.display = "none";
-    document.querySelector(".menu-list-drop5").style.height = "1.5rem";
-    document.querySelector(".menu-list-drop5-team-icon5").style.transform =
+    document.querySelector(`.menu-list-drop${n}`).style.height = "1.5rem";
+    console.log(`.menu-list-drop${n}`);
+    document.querySelector(`.menu-list-drop5-team-icon${n}`).style.transform =
       "rotate(90deg)";
   } else {
     box.style.display = "inline-block";
     if (window.innerWidth > 600) {
-      document.querySelector(".menu-list-drop5").style.height = "6rem";
+      document.querySelector(`.menu-list-drop${n}`).style.height = "6rem";
     }
-    document.querySelector(".menu-list-drop5-team-icon5").style.transform =
+    document.querySelector(`.menu-list-drop5-team-icon${n}`).style.transform =
       "rotate(0deg)";
   }
 }
