@@ -1,17 +1,15 @@
 // menu hide-show
 
-  let button = document.getElementById("click_dot"),
+let button = document.getElementById("click_dot"),
   count = 0;
 button.onclick = function () {
   count += 1;
   if (count % 2 != 0) {
     document.querySelector(".side").style.display = "none";
-
-  }
-  else {
+  } else {
     document.querySelector(".side").style.display = "inline-block";
   }
-}
+};
 
 // menu hide-show
 
@@ -36,40 +34,38 @@ function show(b) {
   }
 }
 
-function show1() {
-  const box = document.querySelector(".menu-list-drop5-ele1");
-  if (window.innerWidth < 600) {
-    if (box.style.display == "inline-block") {
-      box.style.display = "none";
-      document.querySelector(".menu-list-drop1").style.height = "1.5rem";
-      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
-        "rotate(90deg)";
-    } else {
-      box.style.display = "inline-block";
-      if (window.innerWidth > 600) {
-        document.querySelector(".menu-list-drop1").style.height = "11.5rem";
-      }
-      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
-        "rotate(0deg)";
-    }
-  }
-  else{
-    if (box.style.display != "none") {
-        box.style.display = "none";
-        document.querySelector(".menu-list-drop1").style.height = "1.5rem";
-        document.querySelector(".menu-list-drop5-team-icon1").style.transform =
-          "rotate(90deg)";
-      } else {
-        box.style.display = "inline-block";
-        if (window.innerWidth > 600) {
-          document.querySelector(".menu-list-drop1").style.height = "11.5rem";
-        }
-        document.querySelector(".menu-list-drop5-team-icon1").style.transform =
-          "rotate(0deg)";
-      }
-
-  }
-}
+// function show1() {
+//   const box = document.querySelector(".menu-list-drop5-ele1");
+//   if (window.innerWidth < 600) {
+//     if (box.style.display == "inline-block") {
+//       box.style.display = "none";
+//       document.querySelector(".menu-list-drop1").style.height = "1.5rem";
+//       document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+//         "rotate(90deg)";
+//     } else {
+//       box.style.display = "inline-block";
+//       if (window.innerWidth > 600) {
+//         document.querySelector(".menu-list-drop1").style.height = "11.5rem";
+//       }
+//       document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+//         "rotate(0deg)";
+//     }
+//   } else {
+//     if (box.style.display != "none") {
+//       box.style.display = "none";
+//       document.querySelector(".menu-list-drop1").style.height = "1.5rem";
+//       document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+//         "rotate(90deg)";
+//     } else {
+//       box.style.display = "inline-block";
+//       if (window.innerWidth > 600) {
+//         document.querySelector(".menu-list-drop1").style.height = "11.5rem";
+//       }
+//       document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+//         "rotate(0deg)";
+//     }
+//   }
+// }
 
 function show2() {
   const box = document.querySelector(".menu-list-drop5-ele2");
@@ -88,22 +84,20 @@ function show2() {
       document.querySelector(".menu-list-drop5-team-icon2").style.transform =
         "rotate(0deg)";
     }
-  }
-  else{
+  } else {
     if (box.style.display != "none") {
-        box.style.display = "none";
-        document.querySelector(".menu-list-drop2").style.height = "1.5rem";
-        document.querySelector(".menu-list-drop5-team-icon2").style.transform =
-          "rotate(90deg)";
-      } else {
-        box.style.display = "inline-block";
-        if (window.innerWidth > 600) {
-          document.querySelector(".menu-list-drop2").style.height = "9rem";
-        }
-        document.querySelector(".menu-list-drop5-team-icon2").style.transform =
-          "rotate(0deg)";
+      box.style.display = "none";
+      document.querySelector(".menu-list-drop2").style.height = "1.5rem";
+      document.querySelector(".menu-list-drop5-team-icon2").style.transform =
+        "rotate(90deg)";
+    } else {
+      box.style.display = "inline-block";
+      if (window.innerWidth > 600) {
+        document.querySelector(".menu-list-drop2").style.height = "9rem";
       }
-
+      document.querySelector(".menu-list-drop5-team-icon2").style.transform =
+        "rotate(0deg)";
+    }
   }
 }
 
