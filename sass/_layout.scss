@@ -23,7 +23,8 @@
   display: flex;
   // justify-content: center;
   // align-items: center;
-  overflow-y: auto;
+  overflow-y: scroll;
+  height: 100vh;
 
   &::-webkit-scrollbar {
     display: none; }

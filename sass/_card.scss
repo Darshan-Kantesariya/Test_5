@@ -1,13 +1,13 @@
 .card {
   width: 100%;
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   // align-items: center;
   @media only screen and (max-width: 1200px) {
-    padding: 2rem;
-    padding-top: 1rem;
+    // padding: 2rem;
+    // padding-top: 1rem;
   }
  
 
@@ -20,9 +20,22 @@ height: 15%;    // background-color: aqua;
     flex-direction: column;
     justify-content: space-evenly;
 
+   
+
     &-name {
       font-size: 1.2rem;
       font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items:center ;
+
+      &>svg{
+        height: 1.6rem;
+        width: 1.6rem;
+        // margin-left: auto;
+        // display: none;
+        cursor: pointer;
+      }
     }
 
     &-search {
@@ -38,7 +51,7 @@ height: 15%;    // background-color: aqua;
   }
 
   &-box {
-    height: 70%;
+    // height: 70%;
     @media only screen and (max-width: 600px) {
       height: 100%;
     }

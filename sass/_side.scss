@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 45%;
+    // height: 45%;
     @media only screen and (max-width: 1200px) {
       width: 50%;
       height: 100%;
@@ -77,6 +77,15 @@
         & > svg {
           height: 1.5rem;
           width: 1.5rem;
+          fill: none;
+          stroke: var(--color-side-card);
+
+          &:hover{
+            stroke: white;
+            fill: var(--color-side-card);
+            cursor: pointer;
+
+          }
         }
 
         &-dot {
@@ -373,7 +382,7 @@
         }
 
         &-text,&-text1,&-text2 {
-          width: 66%;
+          width: 77%;
           font-size: 0.85rem;
           // font-weight: 400;
           margin-left: 1rem;

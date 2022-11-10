@@ -1,17 +1,17 @@
 // menu hide-show
 
-//   let button = document.querySelector(".menu-list-drop5-team"),
-//   count = 0;
-// button.onclick = function () {
-//   count += 1;
-//   if (count % 2 != 0) {
-//     document.querySelector(".menu-list-drop5-ele").style.display = "none";
+  let button = document.getElementById("click_dot"),
+  count = 0;
+button.onclick = function () {
+  count += 1;
+  if (count % 2 != 0) {
+    document.querySelector(".side").style.display = "none";
 
-//   }
-//   else {
-//     document.querySelector(".menu-list-drop5-ele").style.display = "inline-block";
-//   }
-// }
+  }
+  else {
+    document.querySelector(".side").style.display = "inline-block";
+  }
+}
 
 // menu hide-show
 
