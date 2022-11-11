@@ -484,12 +484,12 @@ input[id="myCheck"]:checked + label:after,
 input[id="myCheck2"]:checked + label:after,
 input[id="myCheck1"]:checked + label:after {
   position: relative;
-  top: -1px;
+  top: -2px;
   left: 0px;
   content: "\2714";
   color: white;
   background-color: var(--color-side-card-fill);
-  font-size: 10px;
+  font-size: 9px;
 }
 
 input[id="myCheck"],

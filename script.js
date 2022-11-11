@@ -101,23 +101,38 @@ function show2() {
   }
 }
 
-function show3() {
-  const box = document.querySelector(".menu-list-drop5-ele3");
-  if (box.style.display == "inline-block") {
-    box.style.display = "none";
-    document.querySelector(".menu-list-drop3").style.height = "1.5rem";
-    document.querySelector(".menu-list-drop5-team-icon3").style.transform =
-      "rotate(90deg)";
-  } else {
-    box.style.display = "inline-block";
-    if (window.innerWidth > 600) {
-      document.querySelector(".menu-list-drop3").style.height = "6rem";
+function show1() {
+  const box = document.querySelector(".menu-list-drop5-ele1");
+  if (window.innerWidth < 600) {
+    if (box.style.display == "inline-block") {
+      box.style.display = "none";
+      document.querySelector(".menu-list-drop1").style.height = "1.5rem";
+      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+        "rotate(90deg)";
+    } else {
+      box.style.display = "inline-block";
+      if (window.innerWidth > 600) {
+        document.querySelector(".menu-list-drop1").style.height = "6rem";
+      }
+      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+        "rotate(0deg)";
     }
-    document.querySelector(".menu-list-drop5-team-icon3").style.transform =
-      "rotate(0deg)";
+  } else {
+    if (box.style.display != "none") {
+      box.style.display = "none";
+      document.querySelector(".menu-list-drop1").style.height = "1.5rem";
+      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+        "rotate(90deg)";
+    } else {
+      box.style.display = "inline-block";
+      if (window.innerWidth > 600) {
+        document.querySelector(".menu-list-drop1").style.height = "11.5rem";
+      }
+      document.querySelector(".menu-list-drop5-team-icon1").style.transform =
+        "rotate(0deg)";
+    }
   }
 }
-
 // function show4() {
 //   const box = document.querySelector(".menu-list-drop5-ele4");
 //   if (box.style.display == "inline-block") {
